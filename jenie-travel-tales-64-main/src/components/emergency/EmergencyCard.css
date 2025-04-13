@@ -1,0 +1,96 @@
+
+.emergency-card {
+  border-radius: 12px;
+}
+
+.emergency-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.emergency-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.emergency-section {
+  background-color: var(--background);
+  padding: 1.25rem;
+  border-radius: 8px;
+}
+
+.section-label {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+  border-bottom: 2px solid var(--primary);
+  padding-bottom: 0.5rem;
+}
+
+.emergency-item {
+  margin-bottom: 0.75rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.item-label {
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.item-value {
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.hospitals-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.hospital-card {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.hospital-name {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--text-primary);
+}
+
+.hospital-phone {
+  color: var(--primary);
+  margin-bottom: 0.25rem;
+  font-weight: 500;
+}
+
+.hospital-address {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+}
+
+.download-btn {
+  width: 100%;
+}
+
+@media (max-width: 992px) {
+  .emergency-content {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .emergency-content {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,115 @@
+
+.surprise-destination {
+  border-radius: 12px;
+}
+
+.surprise-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.surprise-btn {
+  display: block;
+  margin: 0 auto 2rem;
+  min-width: 150px;
+  font-size: 1.125rem;
+}
+
+.destination-card {
+  animation: fadeIn 0.5s ease;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: var(--background);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.destination-image-container {
+  position: relative;
+  height: 250px;
+  overflow: hidden;
+}
+
+.destination-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.destination-card:hover .destination-image {
+  transform: scale(1.05);
+}
+
+.destination-vibe {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 0.5rem;
+  border-radius: 50px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.destination-content {
+  padding: 1.5rem;
+}
+
+.destination-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  color: #333; /* Ensuring text visibility */
+}
+
+.destination-description {
+  color: #555; /* Ensuring text visibility */
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.destination-details {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.detail-item h5 {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #444; /* Ensuring text visibility */
+  font-size: 1rem;
+}
+
+.detail-item p {
+  color: #555; /* Ensuring text visibility */
+}
+
+.things-to-do {
+  list-style-type: disc;
+  padding-left: 1.25rem;
+  color: #555; /* Ensuring text visibility */
+}
+
+.things-to-do li {
+  margin-bottom: 0.25rem;
+}
+
+/* Map container specific styles */
+.destination-map-container {
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .destination-details {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .destination-image-container {
+    height: 200px;
+  }
+}

@@ -1,0 +1,69 @@
+
+.leaflet-map-container {
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.leaflet-map {
+  width: 100%;
+  height: 100%;
+}
+
+.leaflet-control-container .leaflet-routing-container {
+  max-width: 320px;
+  background-color: white;
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-right: 10px;
+}
+
+.leaflet-routing-alt {
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+.leaflet-routing-alt table {
+  width: 100%;
+}
+
+.leaflet-routing-alt h2 {
+  font-size: 16px;
+  margin: 0 0 8px 0;
+}
+
+.leaflet-routing-alt h3 {
+  font-size: 14px;
+  margin: 0 0 5px 0;
+}
+
+/* Fix for Leaflet icon rendering */
+.leaflet-default-icon-path {
+  background-image: url(https://unpkg.com/leaflet@1.7.1/dist/images/marker-icon.png);
+}
+
+/* Fix for marker shadows */
+.leaflet-shadow-pane {
+  z-index: 500;
+}
+
+/* Fix for popups */
+.leaflet-popup-content-wrapper {
+  background-color: white;
+  padding: 8px;
+  border-radius: 6px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.leaflet-popup-content {
+  margin: 8px;
+  color: #333;
+}
+
+.leaflet-popup-tip {
+  background-color: white;
+}

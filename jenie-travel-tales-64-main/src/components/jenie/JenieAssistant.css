@@ -1,0 +1,211 @@
+
+.jenie-tools-container {
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+.jenie-tool-card {
+  transition: all 0.3s ease;
+  background-color: rgba(255, 255, 255, 0.92);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.jenie-tool-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Card theme styling */
+.travel-chat-card {
+  border-top: 4px solid #9b87f5;
+}
+
+.packing-card {
+  border-top: 4px solid #7E69AB;
+}
+
+.emergency-card {
+  border-top: 4px solid #ef4444;
+}
+
+.timeline-card {
+  border-top: 4px solid #6E59A5;
+}
+
+.weather-card {
+  border-top: 4px solid #33C3F0;
+}
+
+.calendar-card {
+  border-top: 4px solid #8B5CF6;
+}
+
+.filter-card {
+  border-top: 4px solid #22c55e;
+}
+
+.budget-card {
+  border-top: 4px solid #f97316;
+}
+
+.trivia-card {
+  border-top: 4px solid #fbbf24;
+}
+
+.tool-input {
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.tool-result {
+  margin-top: 1rem;
+  background-color: rgba(155, 135, 245, 0.1);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border-left: 3px solid #9b87f5;
+  color: #333; /* Ensuring text is visible on light backgrounds */
+}
+
+.tool-heading {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #6E59A5;
+}
+
+.tool-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.tool-list li {
+  margin-bottom: 0.5rem;
+  padding-left: 1.5rem;
+  position: relative;
+  color: #333; /* Ensuring text is visible on light backgrounds */
+}
+
+.tool-list li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #9b87f5;
+}
+
+/* Trivia styling */
+.trivia-container {
+  padding: 1.5rem;
+}
+
+.trivia-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #6E59A5;
+}
+
+.trivia-question {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+  color: #333; /* Ensuring text is visible on light backgrounds */
+}
+
+.trivia-options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.trivia-option {
+  padding: 0.75rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  color: #333; /* Ensuring text is visible on light backgrounds */
+}
+
+.trivia-option:hover {
+  background-color: rgba(155, 135, 245, 0.1);
+}
+
+.trivia-option.selected {
+  background-color: rgba(155, 135, 245, 0.2);
+  border-color: #9b87f5;
+}
+
+.trivia-option.correct {
+  background-color: rgba(34, 197, 94, 0.2);
+  border-color: #22c55e;
+}
+
+.trivia-option.incorrect {
+  background-color: rgba(239, 68, 68, 0.2);
+  border-color: #ef4444;
+}
+
+.trivia-destination-info {
+  background-color: rgba(155, 135, 245, 0.1);
+  padding: 1.2rem;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+  color: #333; /* Ensuring text is visible on light backgrounds */
+}
+
+.trivia-destination {
+  font-weight: 600;
+  color: #6E59A5;
+  margin-bottom: 0.5rem;
+}
+
+.trivia-fact {
+  line-height: 1.6;
+  color: #333; /* Ensuring text is visible on light backgrounds */
+}
+
+.check-answer-btn,
+.next-question-btn {
+  margin-top: 1rem;
+  width: 100%;
+}
+
+/* Card text color adjustments for better visibility */
+.jenie-tool-card h3, 
+.jenie-tool-card p, 
+.jenie-tool-card span, 
+.jenie-tool-card div {
+  color: #333;
+}
+
+/* Card title and description */
+.jenie-tool-card .card-title {
+  color: #333;
+  font-weight: 600;
+}
+
+.jenie-tool-card .card-description {
+  color: #555;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .jenie-tool-card {
+    margin-bottom: 1rem;
+  }
+  
+  .trivia-options {
+    grid-template-columns: 1fr;
+  }
+}

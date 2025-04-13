@@ -1,0 +1,68 @@
+
+.page-background {
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.home-background {
+  background-image: url('https://source.unsplash.com/1600x900/?mountain,travel,road');
+  background-color: #2c3e50; /* Fallback color */
+}
+
+.bookings-background {
+  background-image: url('https://source.unsplash.com/1600x900/?airport,terminal,booking');
+  background-color: #34495e; /* Fallback color */
+}
+
+.budget-background {
+  background-image: url('https://source.unsplash.com/1600x900/?budget,calculator,planning');
+  background-color: #2980b9; /* Fallback color */
+}
+
+.story-background {
+  background-image: url('https://source.unsplash.com/1600x900/?notebook,map,travel');
+  background-color: #8e44ad; /* Fallback color */
+}
+
+.emergency-background {
+  background-image: url('https://source.unsplash.com/1600x900/?emergency,hospital,safety');
+  background-color: #c0392b; /* Fallback color */
+}
+
+.surprise-background {
+  background-image: url('https://source.unsplash.com/1600x900/?colorful,destination,travel');
+  background-color: #16a085; /* Fallback color */
+}
+
+.jenie-background {
+  background-image: url('https://source.unsplash.com/1600x900/?tech,futuristic,ai');
+  background-color: #1c2833; /* Fallback color */
+}
+
+.contact-background {
+  background-image: url('https://source.unsplash.com/1600x900/?contact,phone,communication');
+  background-color: #2c3e50; /* Fallback color */
+}
+
+.page-overlay {
+  background-color: rgba(0, 0, 0, 0.5); /* Darkened overlay for readability */
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-content {
+  flex: 1;
+  padding: 2rem 1rem;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .page-content {
+    padding: 1.5rem 1rem;
+  }
+}
